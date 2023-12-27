@@ -7,13 +7,13 @@ import MobileNav from "./MobileNav"
 
 const Header = () => {
   return (
-    <header className="w-full border-b">
+    <header className="w-full shadow-xl bg-neutral-800">
       <div className="wrapper flex items-center justify-between">
-        <Link href="/" className="w-36">
+        <Link href="/" className="w-36 flex items-center text-xl text-indigo-400 font-semibold">
           <Image 
-            src="/assets/images/logo.svg" width={128} height={38}
+            src="/assets/images/event12.webp" width={58} height={58}
             alt="Evently logo" 
-          />
+          /> Festify
         </Link>
 
         <SignedIn>
