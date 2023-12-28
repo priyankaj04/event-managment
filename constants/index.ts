@@ -2,14 +2,17 @@ export const headerLinks = [
   {
     label: 'Home',
     route: '/',
+    src:'/assets/images/homeicon.webp'
   },
   {
     label: 'Create Event',
     route: '/events/create',
+    src:'/assets/images/createicon.webp'
   },
   {
     label: 'My Profile',
     route: '/profile',
+    src:'/assets/images/profileicon.webp'
   },
 ]
 

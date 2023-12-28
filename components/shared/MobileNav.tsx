@@ -9,6 +9,7 @@ import {
 import Image from "next/image"
 import { Separator } from "../ui/separator"
 import NavItems from "./NavItems"
+import Link from "next/link"
 
 
 const MobileNav = () => {
@@ -24,14 +25,14 @@ const MobileNav = () => {
             className="cursor-pointer"
           />
         </SheetTrigger>
-        <SheetContent className="flex flex-col gap-6 bg-white md:hidden">
+        <SheetContent className="flex flex-1 flex-col gap-6 bg-neutral-700 md:hidden">
+         <Link href="/" className="w-36 flex items-center text-xl text-indigo-400 font-semibold">
           <Image 
-            src="/assets/images/logo.svg"
-            alt="logo"
-            width={128}
-            height={38}
-          />
-          <Separator className="border border-gray-50" />
+            src="/assets/images/event12.webp" width={58} height={58}
+            alt="Evently logo" 
+          /> Festify
+        </Link>
+          <Separator className="border border-neutral-500" />
           <NavItems />
         </SheetContent>
       </Sheet>
